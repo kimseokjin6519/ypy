@@ -25,7 +25,6 @@ def main():
 
         # Set file_name to (video_id).json
         try:
-
                 file_name = video_id + ".json"
                 with open(file_name, 'w', encoding = 'utf-8') as file:
                         file.write(json_transcript)
