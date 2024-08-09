@@ -16,6 +16,7 @@ def main():
         # fetch video transcript by ID and languages
         try:
                 transcript = YouTubeTranscriptApi.get_transcript(video_id, ['en'])
+        
         except Exception as e:
                 print(f"Error: {e}")
                 return
@@ -28,10 +29,11 @@ def main():
                 file_name = video_id + ".json"
                 with open(file_name, 'w', encoding = 'utf-8') as file:
                         file.write(json_transcript)
+                        
         except Exception as e:
                 print(f"Error saving file: {e}")
 
-        print(f"Success!!!")
+        print(f"Success!")
 
 if __name__ == "__main__":
             main()
