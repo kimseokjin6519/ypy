@@ -36,4 +36,4 @@ def main():
         print(f"Success!")
 
 if __name__ == "__main__":
-	main()
+		main()
